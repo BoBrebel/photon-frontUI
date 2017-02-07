@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+
+<nav style="background-color: rgba(0,0,0,0.3)">
+  <div class="nav-wrapper">
+    <a href="#!/view1" class="brand-logo">Photon</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#!/account">Account</a></li>
+      <li><a href="#!/schedule">Schedule</a></li>
+      <li><a href="#!/rides">View My Rides</a></li>
+      <li><a href="#!/support">Support & FAQ</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo" style="background-color: rgba(255,255,255,0.8)">
+        <li><a href="#!/view1"><h3>Photon</h3></a></li>
+        <li><a href="#!/account">Account</a></li>
+        <li><a href="#!/schedule">Schedule</a></li>
+        <li><a href="#!/rides">View My Rides</a></li>
+        <li><a href="#!/support">Support & FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div ng-view></div>
+
+
+
+
+
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="Account/Account.js"></script>
+  <script src="Rides/Rides.js"></script>
+  <script src="Schedule/Schedule.js"></script>
+  <script src="Support/Support.js"></script>
+  <script src="Order/Order.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
+  <script>
+      $( document ).ready(function(){
+          $('.button-collapse').sideNav({
+                  menuWidth: 300, // Default is 300
+                  edge: 'left', // Choose the horizontal origin
+                  closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                  draggable: true // Choose whether you can drag to open on touch screens
+              }
+          );
+
+      })
+  </script>
+</body>
+</html>
