@@ -8,11 +8,11 @@
                             <span class="card-title ">{{title}}</span>
                             <ul class="collection" style="border:0">
 
-                                <li class="collection-item avatar " ng-repeat="(key,value) in account" style="border: 0;padding-left: 5%;">
+                                <li class="collection-item avatar " ng-repeat="(key,prop) in account track by $index" style="border: 0;padding-left: 5%;">
                                     <span class="title">{{key | capitalize}}</span>
-                                    <p ng-if="!isobject(value)">{{value}}</p>
-                                    <p ng-if="isobject(value)" ng-repeat="(one,two) in value">
-                                        {{one | capitalize}} : {{two}}
+                                    <p ng-if="!isobject(prop)">{{prop}}</p>
+                                    <p ng-if="isobject(prop)" ng-repeat="(i,value) in prop track by $index">
+                                        {{i | capitalize}} : {{value}}
                                     </p>
                                 </li>
 
