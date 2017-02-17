@@ -1,0 +1,11 @@
+@import '../common';
+
+.hero {
+
+  height: 50rem;
+  padding: 3rem;
+
+  * {
+    color: $lightTextColor;
+  }
+}
