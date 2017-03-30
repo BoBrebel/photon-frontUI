@@ -5,9 +5,10 @@
       <label class="mdl-textfield__label" for="sample3" style="color: rgba(255,255,255,0.7)">Search</label>
     </div>
   </form>
-<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect order" style="color:#fefefa;height: 50px;margin-top: 10%" ui-sref="about">
+<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect order" style="color:#fefefa;height: 50px;margin-top: 10%" ng-click="$ctrl.order=true">
   Order
 </a>
+     <mapbox order="$ctrl.order"></mapbox>
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect schedule" style="color:#fefefa;height: 50px;margin-top: 10%">
   Schedule
 </button>

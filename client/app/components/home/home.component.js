@@ -6,7 +6,7 @@ let homeComponent = {
   restrict: 'E',
   bindings: {},
   template,
-  controller
+  controller:['Cars', controller]
 };
 
 export default homeComponent;

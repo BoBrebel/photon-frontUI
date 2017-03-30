@@ -1,0 +1,6 @@
+<div ng-show="$ctrl.order">
+  <h1>{{ $ctrl.name }}</h1>
+  <input type="button" ng-click="$ctrl.orderCommute()" value="user"></input>
+  <button ng-click="$ctrl.getCarPosition()"></button>
+  <leaflet lf-center="$ctrl.center" height="500px" width="320px" markers="$ctrl.markers" paths="paths"></leaflet>
+</div>
