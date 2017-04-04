@@ -3,17 +3,34 @@
   <h1>{{ $ctrl.name }}</h1>
 </div>-->
 
-<main class="mdl-layout__content">
-  <div class="mdl-layout__tab-panel is-active" id="overview">
-
-TEST
-
-    <section class=" mdl-grid">
-
-    </section>
-  </div>
-
-
-</main>
-
-
+<br><br>
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-grid--no-spacing mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+        <h2 class="mdl-card__title-text">Add a Schedule</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <form ng-submit="" action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="date" id="date" />
+            <label class="mdl-textfield__label" for="date">Time</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="from" />
+            <label class="mdl-textfield__label" for="from">FROM</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="to" />
+            <label class="mdl-textfield__label" for="to">TO</label>
+          </div>
+        </form>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+          <button style="margin-bottom: 8px;margin-top: 8px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">add</i>
+          </button>
+          <a style="margin-top: -9px;margin-left: -7px;" ui-sref="addschedule" class="mdl-button">
+            Add To Your Schedule
+          </a>
+      </div>
+    </div>
+</div>

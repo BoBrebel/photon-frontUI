@@ -1,91 +1,57 @@
 
 <!--<div>
   <h1>{{ $ctrl.name }}</h1>
-</div>-->
+</div>
+<ul>
+  <li ng-repeat="schedule in $ctrl.schedulelist.schedule">{{schedule}}</li>
+</ul>--><br><br>
+<div class="mdl-card mdl-cell mdl-cell--12-col mdl-grid--no-spacing mdl-shadow--2dp" style="opacity: 0.9;">
+  <h4 style="margin-left: 20px;margin-top: 20px;" class="mdl-cell mdl-cell--12-col">
+    <i class="material-icons">event</i> <span>Current Schedule</span></h4>
+  <div style="margin:2px;" ng-repeat="schedule in $ctrl.schedulelist.schedule" class="content-grid mdl-grid  ">
+
+    <div style="width: 50px;" class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+        <i class="material-icons">local_taxi</i>
+      </button>
+    </div>
+
+  <div style="width: 200px;" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone">
+    <div  class="section__text">
+      <div>
+        {{schedule.date | date:'medium'}}
+        <p><strong>From : </strong> Tunis <br> <strong>To : </strong> Binzart
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+    <div style="float: right;">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
+        <i class="material-icons">delete</i>
+      </button>
+    </div>
+  </div>
+
+</div>
+  <hr>
+  <div class="mdl-card__actions">
+    <button style="margin-bottom: 8px;margin-top: -8px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+      <i class="material-icons">add</i>
+    </button>
+    <a style="margin-top: -9px;margin-left: -7px;" ui-sref="addschedule" class="mdl-button">
+      Add To Your Schedule
+    </a>
+  </div>
+</div>
+
+
+<button ng-click="$ctrl.getAck()"></button>
 
 <main class="mdl-layout__content">
   <div class="mdl-layout__tab-panel is-active" id="overview">
 
-    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-      <div class="mdl-card mdl-cell mdl-cell--12-col" style="    opacity: 0.9;">
-        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-          <h4 class="mdl-cell mdl-cell--12-col"><i class="material-icons">event</i> <span>Current Schedule</span></h4>
-          <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-            <div class="section__circle-container__circle mdl-color--primary"><i style=" margin-top: 20px;
-              margin-left: 20px; color: white;" class="material-icons">local_taxi</i>
-            </div>
-          </div>
-          <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-            <div mdl-grid>
-              <div mdl-cell mdl-cell--9-col style="float: left; margin-right: 50px;">
-                <h5>Monday, 8.00 AM</h5>
-                <p><strong>From : </strong> Tunis <br> <strong>To : </strong> Binzart
-                </p>
-              </div>
-              <div mdl-cell mdl-cell--3-col style="float: right;">
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
-                  <i class="material-icons">delete</i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-            <div class="section__circle-container__circle mdl-color--primary"><i style=" margin-top: 20px;
-              margin-left: 20px; color: white;" class="material-icons">local_taxi</i>
-            </div>
-          </div>
-          <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-            <div mdl-grid>
-              <div mdl-cell mdl-cell--9-col style="float: left; margin-right: 50px;">
-                <h5>Monday, 8.00 AM</h5>
-                <p><strong>From : </strong> Tunis <br> <strong>To : </strong> Binzart
-                </p>
-              </div>
-            <div mdl-cell mdl-cell--3-col style="float: right;">
-              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
-                <i class="material-icons">delete</i>
-              </button>
-            </div>
-            </div>
-          </div>
-          <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-            <div class="section__circle-container__circle mdl-color--primary"><i style=" margin-top: 20px;
-              margin-left: 20px; color: white;" class="material-icons">local_taxi</i>
-            </div>
-          </div>
-          <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-            <div mdl-grid>
-              <div mdl-cell mdl-cell--9-col style="float: left; margin-right: 50px;">
-                <h5>Monday, 8.00 AM</h5>
-                <p><strong>From : </strong> Tunis <br> <strong>To : </strong> Binzart
-                </p>
-              </div>
-              <div mdl-cell mdl-cell--3-col style="float: right;">
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
-                  <i class="material-icons">delete</i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mdl-card__actions">
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-            <i class="material-icons">add</i>
-          </button>
-          <a href="addschedule.html" class="mdl-button">Add A Ride To Your Schedule</a>
-        </div>
-      </div>
-      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-        <i class="material-icons">more_vert</i>
-      </button>
-      <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-        <li class="mdl-menu__item">Add a Ride</li>
-        <li class="mdl-menu__item" disabled>Ipsum</li>
-        <li class="mdl-menu__item">Dolor</li>
-      </ul>
-    </section>
-    <section class=" mdl-grid">
-    </section>
   </div>
 </main>
 

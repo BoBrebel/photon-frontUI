@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import scheduleComponent from './schedule.component';
+import scheduleaddComponent from './addschedule.component';
 
 let scheduleModule = angular.module('schedule', [
   uiRouter
@@ -11,9 +12,15 @@ let scheduleModule = angular.module('schedule', [
       .state('schedule', {
         url: '/schedule',
         component: 'schedule'
+      })
+
+      .state('addschedule', {
+        url: '/addschedule',
+        component: 'scheduleadd',
       });
   })
 .component('schedule', scheduleComponent)
+  .component('scheduleadd',scheduleaddComponent)
 
 .name;
 
