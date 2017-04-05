@@ -27,6 +27,20 @@ class ScheduleController {
     },(reject)=>{
     });
   }
+  remove(id){
+    console.log(id);
+    this.Schedule.removeSchedule(id).then((response)=>{
+      console.log('Schedule deleted !', response.data);
+      this.Schedule.getAll().then((response)=>{
+        this.schedulelist = response.data;
+        console.log("LIST",this.schedulelist);
+      },(reject)=>{
+        console.log('Something went wrong');
+      })
+    },(reject)=>{
+
+    })
+  }
   getAck() {
     console.log(this.Schedule.getAll());
   }

@@ -28,7 +28,7 @@
 
   <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
     <div style="float: right;">
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
+      <button ng-click="$ctrl.remove(schedule._id)" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
         <i class="material-icons">delete</i>
       </button>
     </div>
@@ -45,10 +45,6 @@
     </a>
   </div>
 </div>
-
-
-<button ng-click="$ctrl.getAck()"></button>
-
 <main class="mdl-layout__content">
   <div class="mdl-layout__tab-panel is-active" id="overview">
 
