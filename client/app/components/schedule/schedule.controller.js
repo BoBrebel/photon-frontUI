@@ -6,6 +6,7 @@ class ScheduleController {
     this.Schedule = Schedule;
     this.schedulelist = {};
     this.newSchedule = {};
+    this.scheduleToEdit={};
 
     this.Schedule.getAll().then((response)=>{
       this.schedulelist = response.data;
@@ -40,6 +41,22 @@ class ScheduleController {
     },(reject)=>{
 
     })
+  }
+  /*To get the schedule clicked*/
+  edit(id){
+    console.log(id);
+    this.Schedule.getOneSchedule(id).then((response)=>{
+    this.scheduleToEdit = response.data;
+    console.log(this.scheduleToEdit);
+
+    },(reject)=>{
+
+    })
+  }
+  /*To send the put request of the edited schedule*/
+  update(){
+    console.log(this.scheduleToEdit._id);
+    this.Schedule.updateSchedule(this.scheduleToEdit._id,this.scheduleToEdit);
   }
   getAck() {
     console.log(this.Schedule.getAll());

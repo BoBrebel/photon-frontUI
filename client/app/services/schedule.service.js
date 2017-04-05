@@ -21,7 +21,20 @@ export default class Schedule {
       url: 'http://localhost:4000/schedules/'+id
     });
   }
-  /*Returns the schedules obj after promise exec*/
+  getOneSchedule(id) {
+    return  this.$http({
+      method:'GET',
+      url:'http://localhost:4000/schedules/schedule/'+id
+    })
+  }
+  updateSchedule(id,schedule) {
+    return  this.$http({
+      method:'PUT',
+      url:'http://localhost:4000/schedules/schedule/'+id,
+      headers: {"Content-Type": "application/json;charset=UTF-8"},
+      data: schedule
+    })
+  }
   getScheduleList(){
     return this.schedules;
   }
