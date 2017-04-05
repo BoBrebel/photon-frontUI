@@ -8,8 +8,8 @@ export default class Schedule {
     this.schedules = {};
   }
   /*for now the user_id is static*/
-  addSchedule(schedule, $http) {
-    return $http({
+  addSchedule(schedule) {
+    return this.$http({
       method: 'POST',
       url: 'http://localhost:4000/schedules/user/58c00b4f44822044ec960706/schedule?to='+
       schedule.to+'&from='+schedule.from+'&date='+schedule.date

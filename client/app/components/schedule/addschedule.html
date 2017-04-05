@@ -9,22 +9,22 @@
         <h2 class="mdl-card__title-text">Add a Schedule</h2>
       </div>
       <div class="mdl-card__supporting-text">
-        <form ng-submit="$ctrl.formSubmit(date,from,to)" name="addform">
+        <form  name="addform">
           <div class="mdl-textfield mdl-js-textfield">
-            <input ng-model="date" class="mdl-textfield__input" type="date" id="date" />
+            <input ng-model="schedule.date" class="mdl-textfield__input" type="date" id="date" />
           </div>
           <div class="mdl-textfield mdl-js-textfield">
-            <input ng-model="from" class="mdl-textfield__input" type="text" id="from" />
+            <input ng-model="schedule.from" class="mdl-textfield__input" type="text" id="from" />
             <label class="mdl-textfield__label" for="from">FROM</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield">
-            <input ng-model="to" class="mdl-textfield__input" type="text" id="to" />
+            <input ng-model="schedule.to" class="mdl-textfield__input" type="text" id="to" />
             <label class="mdl-textfield__label" for="to">TO</label>
           </div>
 
       </div>
       <div class="mdl-card__actions mdl-card--border">
-          <button ng-click="$ctrl.formSubmit(date,from,to)" type="submit" style="margin-bottom: 8px;margin-top: 8px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <button ng-click="$ctrl.formSubmit(schedule)" type="submit" style="margin-bottom: 8px;margin-top: 8px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
             <i class="material-icons">add</i>
           </button>
           <a style="margin-top: -9px;margin-left: -7px;"  class="mdl-button">

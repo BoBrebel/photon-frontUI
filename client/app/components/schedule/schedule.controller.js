@@ -15,32 +15,21 @@ class ScheduleController {
     })
   }
 
-  formSubmit(date,from,to){
+ formSubmit(schedule) {
     this.newSchedule = {
-      to: to,
-      from: from,
-      date:date,
+      to: schedule.to,
+      from: schedule.from,
+      date:schedule.date,
     };
     console.log("current new schedule state: ", this.newSchedule);
-    this.Schedule.addSchedule(this.newSchedule, this.$http).then((response)=>{
+    this.Schedule.addSchedule(this.newSchedule).then((response)=>{
       console.log(' Schedule Added :',response.data);
     },(reject)=>{
-
     });
   }
-
-  /*formSubmit(){
-    this.Schedule.addSchedule().then((resposne)=>{
-      console.log(' Schedule Added :', resposne.data);
-    },(reject)=>{
-
-    })
-  }*/
-
   getAck() {
     console.log(this.Schedule.getAll());
   }
-
 
 }
 export default ScheduleController;
