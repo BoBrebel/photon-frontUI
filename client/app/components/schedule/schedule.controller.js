@@ -5,24 +5,24 @@ class ScheduleController {
     this.$http = $http;
     this.Schedule = Schedule;
     this.schedulelist = {};
-    this.$scope.newSchedule = {};
+    this.newSchedule = {};
 
     this.Schedule.getAll().then((response)=>{
       this.schedulelist = response.data;
      console.log("LIST",this.schedulelist);
     },(reject)=>{
-
+      console.log('Something went wrong');
     })
   }
 
   formSubmit(date,from,to){
-    this.$scope.newSchedule = {
+    this.newSchedule = {
       to: to,
       from: from,
       date:date,
     };
-    console.log(this.$scope.newSchedule);
-    this.Schedule.addSchedule(this.$scope.newSchedule, this.$http).then((response)=>{
+    console.log("current new schedule state: ", this.newSchedule);
+    this.Schedule.addSchedule(this.newSchedule, this.$http).then((response)=>{
       console.log(' Schedule Added :',response.data);
     },(reject)=>{
 
