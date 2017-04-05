@@ -32,9 +32,6 @@ export default class Schedule {
       url:'http://localhost:4000/schedules/user/58c00b4f44822044ec960706'
       })
 }
-
-
-
 }
 
 
