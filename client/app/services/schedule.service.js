@@ -28,7 +28,8 @@ export default class Schedule {
   getAll() {
     return  this.$http({
         method:'GET',
-        url:'http://localhost:4000/users/user/58c00b4f44822044ec960706/schedule'
+        //url:'http://localhost:4000/users/user/58c00b4f44822044ec960706/schedule'
+      url:'http://localhost:4000/schedules/user/58c00b4f44822044ec960706'
       })
 }
 

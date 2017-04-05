@@ -8,7 +8,7 @@
 <div class="mdl-card mdl-cell mdl-cell--12-col mdl-grid--no-spacing mdl-shadow--2dp" style="opacity: 0.9;">
   <h4 style="margin-left: 20px;margin-top: 20px;" class="mdl-cell mdl-cell--12-col">
     <i class="material-icons">event</i> <span>Current Schedule</span></h4>
-  <div style="margin:2px;" ng-repeat="schedule in $ctrl.schedulelist.schedule" class="content-grid mdl-grid  ">
+  <div style="margin:2px;" ng-repeat="schedule in $ctrl.schedulelist" class="content-grid mdl-grid  ">
 
     <div style="width: 50px;" class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
       <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
@@ -20,7 +20,7 @@
     <div  class="section__text">
       <div>
         {{schedule.date | date:'medium'}}
-        <p><strong>From : </strong> Tunis <br> <strong>To : </strong> Binzart
+        <p><strong>From : </strong>  {{schedule.from }} <br> <strong>To : </strong>  {{schedule.to}}
         </p>
       </div>
     </div>
