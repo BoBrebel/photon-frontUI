@@ -1,7 +1,10 @@
 class ScheduleController {
-  constructor(Schedule,$scope,$http) {
+  constructor(Schedule,$scope,$http,$rootScope,$location,$state) {
     this.name = 'schedule';
     this.$scope=$scope;
+    this.$state=$state;
+    this.$location = $location;
+    this.$rootScope = $rootScope;
     this.$http = $http;
     this.Schedule = Schedule;
     this.schedulelist = {};
@@ -44,19 +47,35 @@ class ScheduleController {
   }
   /*To get the schedule clicked*/
   edit(id){
-    console.log(id);
+    console.log("OBJ ID",id);
     this.Schedule.getOneSchedule(id).then((response)=>{
     this.scheduleToEdit = response.data;
-    console.log(this.scheduleToEdit);
+     //this.$state.go('editschedule',{myKey:this.scheduleToEdit});
+   //this.$location.url('/editschedule.html').search({param: id});
+    console.log("this schedultoedit in edit",this.scheduleToEdit);
+    var obj = ({
+      from:"Omrane",
+      to:"Manar",
+      date:"2017-04-11T23:00:00.000Z"
+    });
+    this.Schedule.updateSchedule(id,obj).then((response)=>{
+        console.log('done');
+      },(reject)=>{
+
+      });
 
     },(reject)=>{
 
-    })
+    });
   }
   /*To send the put request of the edited schedule*/
   update(){
-    console.log(this.scheduleToEdit._id);
-    this.Schedule.updateSchedule(this.scheduleToEdit._id,this.scheduleToEdit);
+    this.Schedule.updateSchedule(this.scheduleToEdit._id,this.scheduleToEdit).then((response)=>{
+      console.log('Schedule Updated' ,this.scheduleToEdit);
+      console.log("response obj has: ", response);
+    },(reject)=>{
+
+    });
   }
   getAck() {
     console.log(this.Schedule.getAll());
