@@ -32,23 +32,14 @@
   }
 </style>
 <div>
-  <h1>{{ $ctrl.name }} to become register</h1>
+  <h1>{{ $ctrl.name }} login</h1>
 </div>
 <div id="op">
   <div style="opacity: 0.94;margin-top: 30px;" class="mdl-layout mdl-layout--fixed-header mdl-js-layout  mdl-color--white-100">
     <main class="mdl-layout__content main_content">
-<form>
+
       <div class="login-form-div mdl-grid mdl-shadow--2dp"><br><br><br>
         <div style="  margin-top: 40px;" class="mdl-cell mdl-cell--12-col cell_con">
-          <i class="material-icons">person</i>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="sample2">
-            <label class="mdl-textfield__label" for="sample2">Enter Name</label>
-            <span class="mdl-textfield__error">Invalid Email...!</span>
-          </div>
-        </div>
-        <div class="mdl-cell mdl-cell--12-col cell_con">
           <i class="material-icons">person</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -61,17 +52,17 @@
           <i class="material-icons">lock</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample2">
-            <label class="mdl-textfield__label" for="sample2">Enter Password</label>
+            <input class="mdl-textfield__input" type="text" id="pass">
+            <label class="mdl-textfield__label" for="pass">Enter Password</label>
           </div>
         </div>
 
         <div  class="mdl-cell mdl-cell--2-col-phone login-btn-con">
-          <button style="margin-left: 55px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Register</button>
+          <button style="margin-left: 85px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Login</button>
         </div>
-      </form>
+
         <div style="margin-top: -20px;" class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet links">
-          <a ui-sref="login" class="mdl-button--primary">Already a member? Login !</a>
+          <a ui-sref="register" class="mdl-button--primary">Register now !</a>
         </div>
 
       </div>

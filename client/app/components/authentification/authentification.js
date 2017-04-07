@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import authentificationComponent from './authentification.component';
+import loginComponent from './login.component';
 
 let authentificationModule = angular.module('authentification', [
   uiRouter
@@ -14,11 +15,12 @@ let authentificationModule = angular.module('authentification', [
       })
       .state('login', {
         url: '/login',
-        component: 'authentification'
+        component: 'login'
       });
   })
 
 .component('authentification', authentificationComponent)
+.component('login', loginComponent)
 
 .name;
 
