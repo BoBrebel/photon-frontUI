@@ -53,11 +53,7 @@ class ScheduleController {
      //this.$state.go('editschedule',{myKey:this.scheduleToEdit});
    //this.$location.url('/editschedule.html').search({param: id});
     console.log("this schedultoedit in edit",this.scheduleToEdit);
-    var obj = ({
-      from:"Omrane",
-      to:"Manar",
-      date:"2017-04-11T23:00:00.000Z"
-    });
+    var obj = ({from:"Omrane", to:"Manar", date:"2017-04-11T23:00:00.000Z"});
     this.Schedule.updateSchedule(id,obj).then((response)=>{
         console.log('done');
       },(reject)=>{

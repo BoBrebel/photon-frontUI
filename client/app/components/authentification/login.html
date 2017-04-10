@@ -43,8 +43,8 @@
           <i class="material-icons">person</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="sample2">
-            <label class="mdl-textfield__label" for="sample2">Enter Email</label>
+            <input ng-model="logged.email" class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email">
+            <label class="mdl-textfield__label" for="email">Enter Email</label>
             <span class="mdl-textfield__error">Invalid Email...!</span>
           </div>
         </div>
@@ -52,13 +52,13 @@
           <i class="material-icons">lock</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="pass">
+            <input ng-model="logged.password" class="mdl-textfield__input" type="text" id="pass">
             <label class="mdl-textfield__label" for="pass">Enter Password</label>
           </div>
         </div>
 
         <div  class="mdl-cell mdl-cell--2-col-phone login-btn-con">
-          <button style="margin-left: 85px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Login</button>
+          <button type="submit" ng-click="$ctrl.login(logged)" style="margin-left: 85px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Login</button>
         </div>
 
         <div style="margin-top: -20px;" class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet links">

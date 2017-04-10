@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1f6f22-64aa-40b5-8daf-4fbed418faf1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/components/authentification/login.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/components/authentification/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/app.scss" afterPath="$PROJECT_DIR$/client/app/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/authentification/authentification.component.js" afterPath="$PROJECT_DIR$/client/app/components/authentification/authentification.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/authentification/authentification.controller.js" afterPath="$PROJECT_DIR$/client/app/components/authentification/authentification.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/authentification/authentification.html" afterPath="$PROJECT_DIR$/client/app/components/authentification/authentification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/authentification/authentification.js" afterPath="$PROJECT_DIR$/client/app/components/authentification/authentification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/services/services.js" afterPath="$PROJECT_DIR$/client/app/services/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/authentification/login.component.js" afterPath="$PROJECT_DIR$/client/app/components/authentification/login.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/authentification/login.html" afterPath="$PROJECT_DIR$/client/app/components/authentification/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/schedule/editschedule.html" afterPath="$PROJECT_DIR$/client/app/components/schedule/editschedule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/schedule/schedule.controller.js" afterPath="$PROJECT_DIR$/client/app/components/schedule/schedule.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/services/auth.service.js" afterPath="$PROJECT_DIR$/client/app/services/auth.service.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,106 +32,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="schedule.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/services/schedule.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="36" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="schedule.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1272">
-              <caret line="53" column="66" lean-forward="false" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+            <state relative-caret-position="288">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schedule.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.html">
+      <file leaf-file-name="auth.service.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/app/services/auth.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authentification.component.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.component.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/app/components/authentification/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#917#923#0" expanded="true" />
-                <element signature="e#923#929#0" expanded="true" />
-                <element signature="e#929#935#0" expanded="true" />
-                <element signature="e#935#941#0" expanded="true" />
-                <element signature="e#941#947#0" expanded="true" />
-                <element signature="e#947#953#0" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#1488#1494#0" expanded="true" />
-                <element signature="e#1494#1500#0" expanded="true" />
-                <element signature="e#1500#1506#0" expanded="true" />
-                <element signature="e#1506#1512#0" expanded="true" />
-                <element signature="e#1512#1518#0" expanded="true" />
-                <element signature="e#1518#1524#0" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.component.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/components/authentification/login.component.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authentification.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="624">
+              <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,8 +55,18 @@
       <file leaf-file-name="authentification.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/components/authentification/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,33 +75,87 @@
       <file leaf-file-name="authentification.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+            <state relative-caret-position="377">
+              <caret line="107" column="19" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#936#942#0" expanded="true" />
-                <element signature="e#942#948#0" expanded="true" />
-                <element signature="e#948#954#0" expanded="true" />
-                <element signature="e#954#960#0" expanded="true" />
-                <element signature="e#960#966#0" expanded="true" />
-                <element signature="e#966#972#0" expanded="true" />
-                <element signature="e#1481#1487#0" expanded="true" />
-                <element signature="e#1487#1493#0" expanded="true" />
-                <element signature="e#1493#1499#0" expanded="true" />
-                <element signature="e#1499#1505#0" expanded="true" />
-                <element signature="e#1505#1511#0" expanded="true" />
-                <element signature="e#1511#1517#0" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#2052#2058#0" expanded="true" />
-                <element signature="e#2058#2064#0" expanded="true" />
-                <element signature="e#2064#2070#0" expanded="true" />
-                <element signature="e#2070#2076#0" expanded="true" />
-                <element signature="e#2076#2082#0" expanded="true" />
-                <element signature="e#2082#2088#0" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#form#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#921#927#0" expanded="true" />
+                <element signature="e#1336#1342#0" expanded="true" />
+                <element signature="e#1342#1348#0" expanded="true" />
+                <element signature="e#1348#1354#0" expanded="true" />
+                <element signature="e#1354#1360#0" expanded="true" />
+                <element signature="e#1360#1366#0" expanded="true" />
+                <element signature="e#1366#1372#0" expanded="true" />
+                <element signature="e#1863#1869#0" expanded="true" />
+                <element signature="e#1869#1875#0" expanded="true" />
+                <element signature="e#1875#1881#0" expanded="true" />
+                <element signature="e#1881#1887#0" expanded="true" />
+                <element signature="e#1887#1893#0" expanded="true" />
+                <element signature="e#1893#1899#0" expanded="true" />
+                <element signature="e#2426#2432#0" expanded="true" />
+                <element signature="e#2432#2438#0" expanded="true" />
+                <element signature="e#2438#2444#0" expanded="true" />
+                <element signature="e#2444#2450#0" expanded="true" />
+                <element signature="e#2450#2456#0" expanded="true" />
+                <element signature="e#2456#2462#0" expanded="true" />
+                <element signature="e#2884#2890#0" expanded="true" />
+                <element signature="e#2890#2896#0" expanded="true" />
+                <element signature="e#2896#2902#0" expanded="true" />
+                <element signature="e#2902#2908#0" expanded="true" />
+                <element signature="e#2908#2914#0" expanded="true" />
+                <element signature="e#2914#2920#0" expanded="true" />
+                <element signature="e#3330#3336#0" expanded="true" />
+                <element signature="e#3336#3342#0" expanded="true" />
+                <element signature="e#3342#3348#0" expanded="true" />
+                <element signature="e#3348#3354#0" expanded="true" />
+                <element signature="e#3354#3360#0" expanded="true" />
+                <element signature="e#3360#3366#0" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#6;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentification.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addschedule.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/components/schedule/addschedule.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#40#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/components/home/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editschedule.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/components/schedule/editschedule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,15 +202,18 @@
         <option value="$PROJECT_DIR$/client/app/components/schedule/schedule.js" />
         <option value="$PROJECT_DIR$/client/app/services/schedule.service.js" />
         <option value="$PROJECT_DIR$/client/app/components/schedule/schedule.html" />
+        <option value="$PROJECT_DIR$/client/app/components/components.js" />
+        <option value="$PROJECT_DIR$/client/app/services/services.js" />
+        <option value="$PROJECT_DIR$/client/app/components/authentification/authentification.js" />
         <option value="$PROJECT_DIR$/client/app/components/schedule/editschedule.html" />
         <option value="$PROJECT_DIR$/client/app/components/schedule/schedule.controller.js" />
-        <option value="$PROJECT_DIR$/client/app/components/components.js" />
-        <option value="$PROJECT_DIR$/client/app/services/auth.service.js" />
-        <option value="$PROJECT_DIR$/client/app/services/services.js" />
-        <option value="$PROJECT_DIR$/client/app/components/authentification/login.component.js" />
-        <option value="$PROJECT_DIR$/client/app/components/authentification/authentification.js" />
+        <option value="$PROJECT_DIR$/client/app/app.scss" />
         <option value="$PROJECT_DIR$/client/app/components/authentification/authentification.html" />
+        <option value="$PROJECT_DIR$/client/app/components/authentification/authentification.component.js" />
+        <option value="$PROJECT_DIR$/client/app/components/authentification/login.component.js" />
         <option value="$PROJECT_DIR$/client/app/components/authentification/login.html" />
+        <option value="$PROJECT_DIR$/client/app/components/authentification/authentification.controller.js" />
+        <option value="$PROJECT_DIR$/client/app/services/auth.service.js" />
       </list>
     </option>
   </component>
@@ -276,8 +263,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -552,12 +539,15 @@
       <workItem from="1491309393674" duration="26794000" />
       <workItem from="1491395314940" duration="16998000" />
       <workItem from="1491475088077" duration="112000" />
-      <workItem from="1491496448706" duration="14075000" />
+      <workItem from="1491496448706" duration="14269000" />
+      <workItem from="1491554623583" duration="3414000" />
+      <workItem from="1491768636347" duration="2219000" />
+      <workItem from="1491843435492" duration="5321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107939000" />
+    <option name="totallyTimeSpent" value="119087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,14 +563,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23363096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19494048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2190016" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2190016" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -606,20 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/app/components/about/about.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/about/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/directives/angular-leaflet-directive.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11526">
@@ -685,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/app.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -703,13 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/services/user.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -731,13 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/about/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -808,32 +763,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/addschedule.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/mapbox/mapbox.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2208">
           <caret line="1" column="74" lean-forward="true" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,35 +777,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/editschedule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/addschedule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/components.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,163 +788,223 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/about/about.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="552">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.controller.js">
+    <entry file="file://$PROJECT_DIR$/client/app/components/about/about.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="53" column="66" lean-forward="false" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/services/schedule.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="36" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="71" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/editschedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/services/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/services/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/services/auth.service.js">
+    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/addschedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="264">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/authentification/login.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/schedule.html">
+    <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="96">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/schedule/addschedule.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#40#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        <state relative-caret-position="377">
+          <caret line="107" column="19" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#936#942#0" expanded="true" />
-            <element signature="e#942#948#0" expanded="true" />
-            <element signature="e#948#954#0" expanded="true" />
-            <element signature="e#954#960#0" expanded="true" />
-            <element signature="e#960#966#0" expanded="true" />
-            <element signature="e#966#972#0" expanded="true" />
-            <element signature="e#1481#1487#0" expanded="true" />
-            <element signature="e#1487#1493#0" expanded="true" />
-            <element signature="e#1493#1499#0" expanded="true" />
-            <element signature="e#1499#1505#0" expanded="true" />
-            <element signature="e#1505#1511#0" expanded="true" />
-            <element signature="e#1511#1517#0" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#2052#2058#0" expanded="true" />
-            <element signature="e#2058#2064#0" expanded="true" />
-            <element signature="e#2064#2070#0" expanded="true" />
-            <element signature="e#2070#2076#0" expanded="true" />
-            <element signature="e#2076#2082#0" expanded="true" />
-            <element signature="e#2082#2088#0" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#form#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#921#927#0" expanded="true" />
+            <element signature="e#1336#1342#0" expanded="true" />
+            <element signature="e#1342#1348#0" expanded="true" />
+            <element signature="e#1348#1354#0" expanded="true" />
+            <element signature="e#1354#1360#0" expanded="true" />
+            <element signature="e#1360#1366#0" expanded="true" />
+            <element signature="e#1366#1372#0" expanded="true" />
+            <element signature="e#1863#1869#0" expanded="true" />
+            <element signature="e#1869#1875#0" expanded="true" />
+            <element signature="e#1875#1881#0" expanded="true" />
+            <element signature="e#1881#1887#0" expanded="true" />
+            <element signature="e#1887#1893#0" expanded="true" />
+            <element signature="e#1893#1899#0" expanded="true" />
+            <element signature="e#2426#2432#0" expanded="true" />
+            <element signature="e#2432#2438#0" expanded="true" />
+            <element signature="e#2438#2444#0" expanded="true" />
+            <element signature="e#2444#2450#0" expanded="true" />
+            <element signature="e#2450#2456#0" expanded="true" />
+            <element signature="e#2456#2462#0" expanded="true" />
+            <element signature="e#2884#2890#0" expanded="true" />
+            <element signature="e#2890#2896#0" expanded="true" />
+            <element signature="e#2896#2902#0" expanded="true" />
+            <element signature="e#2902#2908#0" expanded="true" />
+            <element signature="e#2908#2914#0" expanded="true" />
+            <element signature="e#2914#2920#0" expanded="true" />
+            <element signature="e#3330#3336#0" expanded="true" />
+            <element signature="e#3336#3342#0" expanded="true" />
+            <element signature="e#3342#3348#0" expanded="true" />
+            <element signature="e#3348#3354#0" expanded="true" />
+            <element signature="e#3354#3360#0" expanded="true" />
+            <element signature="e#3360#3366#0" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#6;n#div#0;n#form#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#main#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/authentification/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#917#923#0" expanded="true" />
-            <element signature="e#923#929#0" expanded="true" />
-            <element signature="e#929#935#0" expanded="true" />
-            <element signature="e#935#941#0" expanded="true" />
-            <element signature="e#941#947#0" expanded="true" />
-            <element signature="e#947#953#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#1488#1494#0" expanded="true" />
-            <element signature="e#1494#1500#0" expanded="true" />
-            <element signature="e#1500#1506#0" expanded="true" />
-            <element signature="e#1506#1512#0" expanded="true" />
-            <element signature="e#1512#1518#0" expanded="true" />
-            <element signature="e#1518#1524#0" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#main#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/authentification/authentification.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/services/auth.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
