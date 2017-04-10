@@ -22,6 +22,6 @@ angular.module('app', [
     $locationProvider.html5Mode(true).hashPrefix('!');
   })
 
-  .component('app', AppComponent)
+  .component('app', AppComponent);
 
 
