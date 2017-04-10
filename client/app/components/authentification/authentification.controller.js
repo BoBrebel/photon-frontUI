@@ -1,9 +1,11 @@
 class AuthentificationController {
-  constructor(Authentification) {
+  constructor(Authentification,$window) {
     this.name = 'authentification';
     this.Authentification = Authentification;
     this.newUser={};
     this.loggedUser={};
+    this.$window = $window;
+
   }
 
   formSubmit(user) {
@@ -20,7 +22,9 @@ class AuthentificationController {
       console.log(' User Added :',response.data);
     },(reject)=>{
     });
-  }
+  };
+
+
 
   login(logged){
     var token="";
@@ -31,7 +35,9 @@ class AuthentificationController {
     console.log("trying to login : ", this.loggedUser);
     this.Authentification.login(this.loggedUser).then((response)=>{
       console.log(' User Added and data response :',response.data);
-      token=response.data.token;
+      console.log(' token:',response.data.token);
+      token = response.data.token;
+      this.$window.localStorage['jwtToken'] = token;
     },(reject)=>{
     });
   }
