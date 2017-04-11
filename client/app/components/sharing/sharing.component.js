@@ -1,3 +1,6 @@
+/**
+ * Created by HDMI on 4/4/2017.
+ */
 import template from './sharing.html';
 import controller from './sharing.controller';
 import './sharing.scss';

@@ -5,7 +5,16 @@ import sharingComponent from './sharing.component';
 let sharingModule = angular.module('sharing', [
   uiRouter
 ])
+  .config(($stateProvider) => {
+    "ngInject";
 
+
+    $stateProvider
+      .state('sharing', {
+        url: '/sharing',
+        component: 'sharing'
+      });
+  })
 .component('sharing', sharingComponent)
 
 .name;
