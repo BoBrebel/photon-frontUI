@@ -21,7 +21,6 @@ angular.module('app', [
     // #how-to-configure-your-server-to-work-with-html5mode
     $locationProvider.html5Mode(true).hashPrefix('!');
   })
-
   .component('app', AppComponent);
 
 

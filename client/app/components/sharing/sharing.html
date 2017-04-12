@@ -1,6 +1,28 @@
+<style>
+  .custom {
+  color: #0d47a1;
+  }
+
+</style>
 <div>
-  <h1>{{ $ctrl.name }}</h1>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-    Button
+  <h1>{{ $ctrl.availablelist[0].from }}</h1>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"ui-sref="home">
+    Return
   </button>
 </div>
+<!-- Wide card with share menu button -->
+
+<ul class="demo-list-three mdl-list">
+  <li class="mdl-list__item mdl-list__item--three-line" style="background-color: white" ng-repeat="item in $ctrl.availablelist " ng-cloak="">
+    <span class="mdl-list__item-primary-content">
+      <span class="custom">From :</span><span>{{item.from}}</span><br>
+      <span class="custom">To :</span><span>{{item.to}}</span><br>
+      <span class="custom">Date :</span><span>{{item.date}}</span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-click="$ctrl.add_Customer(item._id)">
+          Order
+      </button>
+    </span>
+  </li>
+</ul>

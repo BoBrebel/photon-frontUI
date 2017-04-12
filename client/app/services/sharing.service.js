@@ -8,19 +8,18 @@ export default class Sharing {
     this.schedules = {};
   }
 
-  register(user){
+  getAvailable(){
     return this.$http({
-      method: 'POST',
-      url: 'http://localhost:4000/users/register',
-      data:user
+      method: 'GET',
+      url: 'http://localhost:4000/sharing/available',
     });
   }
 
-  login(logged){
+  addCustomer(id_schedule){
     return this.$http({
-      method: 'POST',
-      url: 'http://localhost:4000/users/login',
-      data:logged
+      method: 'PUT',
+      url: 'http://localhost:4000/sharing/addCustomer/'+id_schedule+'/58c00d046ad53f1e3c325fe7',
+
     });
   }
 

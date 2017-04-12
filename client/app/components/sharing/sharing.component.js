@@ -9,7 +9,7 @@ let sharingComponent = {
   restrict: 'E',
   bindings: {},
   template,
-  controller
+  controller:['Sharing',controller]
 };
 
 export default sharingComponent;
