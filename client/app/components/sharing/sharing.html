@@ -1,28 +1,54 @@
 <style>
   .custom {
-  color: #0d47a1;
+    color: #84ffff;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
   }
 
+  .opacity {
+    background-color: rgba(33, 25, 29, 0.7);
+
+  }
+
+  .text {
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+  }
 </style>
 <div>
   <h1>{{ $ctrl.availablelist[0].from }}</h1>
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"ui-sref="home">
-    Return
-  </button>
+
 </div>
 <!-- Wide card with share menu button -->
 
 <ul class="demo-list-three mdl-list">
-  <li class="mdl-list__item mdl-list__item--three-line" style="background-color: white" ng-repeat="item in $ctrl.availablelist " ng-cloak="">
+  <div class="opacity">
+    <li class="mdl-list__item mdl-list__item--three-line mdl-js-ripple-effect" style="height: auto"
+        ng-repeat="item in $ctrl.availablelist " ng-cloak="">
     <span class="mdl-list__item-primary-content">
-      <span class="custom">From :</span><span>{{item.from}}</span><br>
-      <span class="custom">To :</span><span>{{item.to}}</span><br>
-      <span class="custom">Date :</span><span>{{item.date}}</span>
+      <span class="custom">From :</span><span class="text">{{item.from}}</span><br>
+      <span class="custom">To :</span><span class="text">{{item.to}}</span><br>
+      <span class="custom">Date :</span><span class="text">{{item.date}}</span>
     </span>
-    <span class="mdl-list__item-secondary-content">
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-click="$ctrl.add_Customer(item._id)">
+      <span class="mdl-list__item-secondary-content">
+      <div ng-if="!$ctrl.cancel[$index]">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                ng-click="$ctrl.add_Customer(item._id,$index)">
           Order
       </button>
+      </div>
+      <div ng-if="$ctrl.cancel[$index]==true">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                ng-click="$ctrl.cancelOrder(item._id,$index)">
+          Cancel
+      </button>
+      </div>
     </span>
-  </li>
+    </li>
+  </div>
 </ul>
+<div>
+
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="home">
+    Return
+  </button>
+</div>

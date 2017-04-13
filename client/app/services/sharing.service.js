@@ -22,8 +22,13 @@ export default class Sharing {
 
     });
   }
+  deleteCustomerFromSchedule(id_schedule){
+    return this.$http({
+      method: 'DELETE',
+      url: 'http://localhost:4000/sharing/delete/'+id_schedule+'/58c00b4f44822044ec960706',
 
-
+    });
+  }
 }
 
 
