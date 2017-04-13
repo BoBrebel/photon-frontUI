@@ -47,32 +47,10 @@ class ScheduleController {
   }
   /*To get the schedule clicked*/
   edit(id){
-    console.log("OBJ ID",id);
-    this.Schedule.getOneSchedule(id).then((response)=>{
-    this.scheduleToEdit = response.data;
-     //this.$state.go('editschedule',{myKey:this.scheduleToEdit});
-   //this.$location.url('/editschedule.html').search({param: id});
-    console.log("this schedultoedit in edit",this.scheduleToEdit);
-    var obj = ({from:"Omrane", to:"Manar", date:"2017-04-11T23:00:00.000Z"});
-    this.Schedule.updateSchedule(id,obj).then((response)=>{
-        console.log('done');
-      },(reject)=>{
-
-      });
-
-    },(reject)=>{
-
-    });
+    console.log("OBJ ID edit clicked ",id);
+    this.Schedule.setScheduleToEdit(this.Schedule.getOneSchedule(id));
   }
-  /*To send the put request of the edited schedule*/
-  update(){
-    this.Schedule.updateSchedule(this.scheduleToEdit._id,this.scheduleToEdit).then((response)=>{
-      console.log('Schedule Updated' ,this.scheduleToEdit);
-      console.log("response obj has: ", response);
-    },(reject)=>{
 
-    });
-  }
   getAck() {
     console.log(this.Schedule.getAll());
   }

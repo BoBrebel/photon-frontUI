@@ -6,6 +6,8 @@ export default class Schedule {
     'ngInject';
     this.$http = $http;
     this.schedules = {};
+    this.scheduleToEdit ;
+
   }
   /*for now the user_id is static*/
   addSchedule(schedule) {
@@ -45,6 +47,15 @@ export default class Schedule {
       url:'http://localhost:4000/schedules/user/58c00b4f44822044ec960706'
       })
 }
+
+  getScheduleToEdit(){
+    return this.scheduleToEdit;
+  }
+
+  setScheduleToEdit(schedule){
+  this.scheduleToEdit = schedule;
+
+  }
 }
 
 

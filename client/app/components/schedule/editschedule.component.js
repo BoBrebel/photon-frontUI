@@ -2,7 +2,7 @@
  * Created by HDMI on 4/4/2017.
  */
 import template from './editschedule.html';
-import controller from './schedule.controller';
+import controller from './edit.controller';
 import './schedule.scss';
 
 let editscheduleComponent = {
