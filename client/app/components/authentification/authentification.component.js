@@ -6,7 +6,7 @@ let authentificationComponent = {
   restrict: 'E',
   bindings: {},
   template,
-  controller : ['Authentification', controller]
+  controller : ['Authentification','$state' ,controller]
 };
 
 export default authentificationComponent;

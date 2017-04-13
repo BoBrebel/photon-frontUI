@@ -44,8 +44,11 @@ export default class Schedule {
     return  this.$http({
         method:'GET',
         //url:'http://localhost:4000/users/user/58c00b4f44822044ec960706/schedule'
-      url:'http://localhost:4000/schedules/user/58c00b4f44822044ec960706'
-      })
+      url:'http://localhost:4000/schedules/user/58ebce74ee2c4363d4f7ebf3',
+      headers: {
+          'Authorization' : 'Bearer '+localStorage.getItem('jwtToken')
+      }
+      });
 }
 
   getScheduleToEdit(){

@@ -23,6 +23,16 @@ export default class Authentification {
       data:logged
     });
   }
+  schedule(){
+    return this.$http({
+      method: 'GET',
+      url: 'http://localhost:4000/schedules',
+      headers: {
+        'Authoriziton' : localStorage.getItem('jwtToken')
+      }
+    });
+  }
+
 
 
 }

@@ -1,11 +1,11 @@
 class AuthentificationController {
-  constructor(Authentification,$window) {
+
+  constructor(Authentification,$state) {
     this.name = 'authentification';
     this.Authentification = Authentification;
     this.newUser={};
     this.loggedUser={};
-    this.$window = $window;
-
+    this.$state = $state;
   }
 
   formSubmit(user) {
@@ -28,18 +28,27 @@ class AuthentificationController {
 
   login(logged){
     var token="";
+    var msg ="";
     this.loggedUser = {
       email:logged.email,
       password : logged.password
     };
     console.log("trying to login : ", this.loggedUser);
     this.Authentification.login(this.loggedUser).then((response)=>{
-      console.log(' User Added and data response :',response.data);
+      console.log(' User Loged in and data response :',response.data);
       console.log(' token:',response.data.token);
+      console.log('User retrieved is : ', response.data);
       token = response.data.token;
-      this.$window.localStorage['jwtToken'] = token;
+      localStorage.setItem('jwtToken',token);
+      localStorage.setItem('CurrentUser', response.data.user);
+      this.$state.go('home', {});
     },(reject)=>{
+      msg = "Please Verify your Credentials";
     });
+  }
+
+  logout(){
+    localStorage.clear();
   }
 }
 
