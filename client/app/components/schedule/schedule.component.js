@@ -6,7 +6,7 @@ let scheduleComponent = {
   restrict: 'E',
   bindings: {},
   template,
-  controller: ['Schedule', controller]
+  controller: ['Schedule','$state', controller]
 };
 
 export default scheduleComponent;

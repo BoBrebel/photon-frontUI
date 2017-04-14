@@ -9,7 +9,7 @@
   .login-form-div{
     width: 380px;
     background: #fff;
-    height:550px;
+    height:600px;
     border-radius: 4px;
   }
   .form-column{
@@ -31,13 +31,15 @@
     width:100%;
   }
 </style>
+<br>
 
 <div id="op">
-  <h2>Logo goes here !</h2>
+
   <div style="margin-top: 30px;" class="mdl-layout mdl-layout--fixed-header mdl-js-layout  mdl-color--white-100">
     <main class="mdl-layout__content main_content">
 <form>
       <div class="login-form-div mdl-grid mdl-shadow--2dp"><br><br><br>
+        <img style="margin-left: 43px;" src="/app/assets/logo.png" alt="">
         <div style="  margin-top: 40px;" class="mdl-cell mdl-cell--12-col cell_con">
           <i class="material-icons">person</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -47,7 +49,7 @@
           </div>
         </div>
         <div  class="mdl-cell mdl-cell--12-col cell_con">
-          <i class="material-icons">person</i>
+          <i class="material-icons">face</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input ng-model="user.username" class="mdl-textfield__input" type="text"  id="username">
@@ -56,7 +58,7 @@
           </div>
         </div>
         <div class="mdl-cell mdl-cell--12-col cell_con">
-          <i class="material-icons">person</i>
+          <i class="material-icons">mail_outline</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input ng-model="user.email" class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email">
@@ -74,7 +76,7 @@
         </div>
 
         <div  class="mdl-cell mdl-cell--12-col cell_con">
-          <i class="material-icons">lock</i>
+          <i class="material-icons">room</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input ng-model="user.adress" class="mdl-textfield__input" type="text" id="adress">
@@ -82,20 +84,24 @@
           </div>
         </div>
         <div  class="mdl-cell mdl-cell--12-col cell_con">
-          <i class="material-icons">lock</i>
+
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <table>
 
-            <tr><td>
+            <tr>
+              <td><span style="margin-right: 20px"> Plan</span> </td>
+
+
+              <td>
               <label class="mdl-radio mdl-js-radio" for="standard">
                 <input ng-model="user.type" value="standard" type="radio" id="standard" name="type" class="mdl-radio__button" checked>
-                <span class="mdl-radio__label">Standard</span>
+                <span class="mdl-radio__label" style="margin-right: 10px;"> Standard</span>
               </label>
             </td>
               <td>
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="business">
                   <input ng-model="user.type" value=""business type="radio" id="business" name="type" class="mdl-radio__button" >
-                  <span class="mdl-radio__label">Business</span>
+                  <span class="mdl-radio__label"> Business</span>
                 </label>
               </td>
             </tr>
@@ -105,7 +111,7 @@
         <div  class="mdl-cell mdl-cell--2-col-phone login-btn-con">
           <button ng-click="$ctrl.formSubmit(user)" type="submit" style="margin-left: 90px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Register</button>
         </div>
-</form><br><br><br>
+</form><br><br><br><br>
         <div  class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet links">
           <a style="font-size: 20px;" ui-sref="login" class="mdl-button--primary">Already a member? Login !</a>
         </div>

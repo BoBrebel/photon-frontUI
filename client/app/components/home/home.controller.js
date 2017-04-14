@@ -10,6 +10,10 @@ class HomeController {
   getSchedules(){
     this.Schedule.getAll();
   }
+
+  logout(){
+    localStorage.clear();
+  }
 }
 
 export default HomeController;

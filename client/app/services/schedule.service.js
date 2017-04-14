@@ -13,7 +13,7 @@ export default class Schedule {
   addSchedule(schedule) {
     return this.$http({
       method: 'POST',
-      url: 'http://localhost:4000/schedules/user/58c00b4f44822044ec960706/schedule?to='+
+      url: 'http://localhost:4000/schedules/user/'+localStorage.getItem('CurrentUser')+'/schedule?to='+
       schedule.to+'&from='+schedule.from+'&date='+schedule.date
     });
   }
@@ -41,10 +41,11 @@ export default class Schedule {
     return this.schedules;
   }
   getAll() {
+
     return  this.$http({
         method:'GET',
         //url:'http://localhost:4000/users/user/58c00b4f44822044ec960706/schedule'
-      url:'http://localhost:4000/schedules/user/58ebce74ee2c4363d4f7ebf3',
+      url:'http://localhost:4000/schedules/user/'+localStorage.getItem('CurrentUser'),
       headers: {
           'Authorization' : 'Bearer '+localStorage.getItem('jwtToken')
       }

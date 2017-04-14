@@ -1,11 +1,9 @@
 class ScheduleController {
-  constructor(Schedule,$scope,$http,$rootScope,$location,$state) {
+  constructor(Schedule,$state) {
     this.name = 'schedule';
-    this.$scope=$scope;
+
     this.$state=$state;
-    this.$location = $location;
-    this.$rootScope = $rootScope;
-    this.$http = $http;
+
     this.Schedule = Schedule;
     this.schedulelist = {};
     this.newSchedule = {};
@@ -28,6 +26,7 @@ class ScheduleController {
     console.log("current new schedule state: ", this.newSchedule);
     this.Schedule.addSchedule(this.newSchedule).then((response)=>{
       console.log(' Schedule Added :',response.data);
+      this.$state.go('schedule', {});
     },(reject)=>{
     });
   }

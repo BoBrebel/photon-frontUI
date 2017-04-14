@@ -7,9 +7,9 @@
     text-align: center;
   }
   .login-form-div{
-    width: 380px;
+    width: 330px;
     background: #fff;
-    height:350px;
+    height:320px;
     border-radius: 4px;
   }
   .form-column{
@@ -31,14 +31,13 @@
     width:100%;
   }
 </style>
-<div>
-  <h1>{{ $ctrl.name }} login</h1>
-</div>
+<br><br><br><br><br>
 <div id="op">
   <div style="opacity: 0.94;margin-top: 30px;" class="mdl-layout mdl-layout--fixed-header mdl-js-layout  mdl-color--white-100">
     <main class="mdl-layout__content main_content">
 
       <div class="login-form-div mdl-grid mdl-shadow--2dp"><br><br><br>
+        <img style="margin-left: 40px;" src="/app/assets/logo.png" alt="">
         <div style="  margin-top: 40px;" class="mdl-cell mdl-cell--12-col cell_con">
           <i class="material-icons">person</i>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -61,7 +60,7 @@
           <button type="submit" ng-click="$ctrl.login(logged)" style="margin-left: 85px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Login</button>
         </div>
 
-        <div style="margin-top: -20px;" class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet links">
+        <div  class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet links">
           <a ui-sref="register" class="mdl-button--primary">Register now !</a>
         </div>
 

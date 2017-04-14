@@ -20,6 +20,7 @@ class AuthentificationController {
     console.log("current new user state: ", this.newUser);
     this.Authentification.register(this.newUser).then((response)=>{
       console.log(' User Added :',response.data);
+      this.$state.go('login',{});
     },(reject)=>{
     });
   };
@@ -40,7 +41,8 @@ class AuthentificationController {
       console.log('User retrieved is : ', response.data);
       token = response.data.token;
       localStorage.setItem('jwtToken',token);
-      localStorage.setItem('CurrentUser', response.data.user);
+      console.log("loooog",response.data.user);
+      localStorage.setItem('CurrentUser', response.data.user._id);
       this.$state.go('home', {});
     },(reject)=>{
       msg = "Please Verify your Credentials";
