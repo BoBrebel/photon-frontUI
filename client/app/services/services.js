@@ -4,6 +4,7 @@ import User from './user.service';
 import Schedule from './schedule.service';
 import Authentification from './auth.service';
 import Sharing from './sharing.service';
+import Feedback from './feedback.service';
 
 let serviceModule = angular.module('app.services', [])
   .service('Cars',Car)
@@ -11,6 +12,7 @@ let serviceModule = angular.module('app.services', [])
   .service('Schedule',Schedule)
   .service('Authentification', Authentification)
   .service('Sharing', Sharing)
+  .service('Feedback', Feedback)
 
   .name;
 

@@ -53,6 +53,13 @@ class ScheduleController {
   getAck() {
     console.log(this.Schedule.getAll());
   }
-
+returned (){
+  this.Schedule.getAll().then((response)=>{
+    this.schedulelist = response.data;
+    console.log("LIST",this.schedulelist);
+  },(reject)=>{
+    console.log('Something went wrong');
+  })
+}
 }
 export default ScheduleController;

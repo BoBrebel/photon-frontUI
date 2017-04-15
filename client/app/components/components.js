@@ -5,6 +5,7 @@ import Mapbox from './mapbox/mapbox';
 import Schedule from './schedule/schedule';
 import Authentification from './authentification/authentification';
 import Sharing from './sharing/sharing';
+import Feedback from './feedback/feedback';
 
 let componentModule = angular.module('app.components', [
   Home,
@@ -12,7 +13,8 @@ let componentModule = angular.module('app.components', [
   Schedule,
   Authentification,
   Mapbox,
-  Sharing
+  Sharing,
+  Feedback
 ])
 
 .name;

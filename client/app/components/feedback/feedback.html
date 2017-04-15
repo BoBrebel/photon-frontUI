@@ -1,0 +1,59 @@
+<!-- Wide card with share menu button -->
+<style>
+  .demo-card-wide.mdl-card {
+    width: 412px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('app/assets/welcome_card.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+</style>
+<br>
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Send us Your FeedBack</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+Your Feedback is important to us to improve our services and satisfy your needs, So how can we help you?<button class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">mood</i>
+</button>
+</h5></div>
+  <div class="mdl-card__actions mdl-card--border">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" ng-model="feed.text" type="text" id="sample3">
+      <label class="mdl-textfield__label" for="sample3">Text...</label>
+    </div>
+    <table>
+
+      <tr>
+        <td><span style="margin-right: 20px"> Cateogry</span> </td>
+
+
+        <td>
+          <label class="mdl-radio mdl-js-radio" for="security">
+            <input ng-model="feed.category" value="security" type="radio" id="security" name="type" class="mdl-radio__button" checked>
+            <span class="mdl-radio__label" style="margin-right: 10px;"> Security</span>
+          </label>
+        </td>
+        <td>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="service">
+            <input ng-model="feed.category" value="service" type="radio" id="service" name="type" class="mdl-radio__button" >
+            <span class="mdl-radio__label"> Service</span>
+          </label>
+        </td>
+      </tr>
+    </table>
+    <button ng-click="$ctrl.formSubmit(feed)" style=" margin-left: 110px;margin-top: 30px;margin-bottom: 20px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      SEND
+    </button>
+  </div>
+  <div class="mdl-card__menu">
+    <button ui-sref="home" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">replay</i>
+    </button>
+  </div>
+</div>
