@@ -7,3 +7,7 @@
  <p>Hadhemi LAOUINI</p>
  <p>Mourad RIAHI</p>
 </p>
+<h1> Usage </h1> 
+This is the AngularJS client application for <a href="https://github.com/Hadh/Cord-System-Photon">the Cordination-System </a>. 
+<p>Clone the repo, run <b> npm install </b> to install node_modules </p>
+<p> Run <b> npm start </b> on the Coordination System, ( see README.md of the Coordination system) then <b> npm start </b> on this application.  
