@@ -58,6 +58,7 @@ class MapboxController {
 
     });
     this.events=this.leafletMarkerEvents.getAvailableEvents();
+
     this.$onInit= ()=>{
       this.$interval(()=>{this.Users.getCurrentPosition().then((resolve,reject)=>{
         if(resolve){

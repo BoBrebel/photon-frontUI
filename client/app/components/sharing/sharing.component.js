@@ -9,7 +9,7 @@ let sharingComponent = {
   restrict: 'E',
   bindings: {},
   template,
-  controller:['Sharing',controller]
+  controller:['Users','Sharing','$scope','$rootScope','$interval',controller]
 };
 
 export default sharingComponent;

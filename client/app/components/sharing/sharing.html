@@ -1,3 +1,5 @@
+<script src="sharing.controller.js"></script>
+
 <style>
   .custom {
     color: #84ffff;
@@ -14,29 +16,32 @@
     font-family: 'Comic Sans MS', cursive;
   }
 </style>
-<div>
-  <h1>{{ $ctrl.availablelist[0].from }}</h1>
+<h1>{{test}}</h1>
+<h1>{{$ctrl.latitude_user}}</h1>
+<h1>{{$ctrl.longitude_user}}</h1>
 
-</div>
+<div ng-init=""></div>
 <!-- Wide card with share menu button -->
 
 <ul class="demo-list-three mdl-list">
   <div class="opacity">
     <li class="mdl-list__item mdl-list__item--three-line mdl-js-ripple-effect" style="height: auto"
         ng-repeat="item in $ctrl.availablelist " ng-cloak="">
-    <span class="mdl-list__item-primary-content">
+
+      <span class="mdl-list__item-primary-content" ng-init="$ctrl.distance($index,$ctrl.latitude_user,$ctrl.longitude_user)">
       <span class="custom">From :</span><span class="text">{{item.from}}</span><br>
       <span class="custom">To :</span><span class="text">{{item.to}}</span><br>
-      <span class="custom">Date :</span><span class="text">{{item.date}}</span>
-    </span>
+      <span class="custom">Distance :</span><span class="text">{{$ctrl.distances[$index]}} Km</span><!--$ctrl.distances[$index]-->
+      </span>
+
       <span class="mdl-list__item-secondary-content">
-      <div ng-if="!$ctrl.cancel[$index]">
+      <div ng-if="!$ctrl.cancel[$index] && $ctrl.unique==false" ng-cloak="">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
                 ng-click="$ctrl.add_Customer(item._id,$index)">
           Order
       </button>
       </div>
-      <div ng-if="$ctrl.cancel[$index]==true">
+      <div ng-if="$ctrl.cancel[$index]==true && $ctrl.unique==true" ng-cloak="">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
                 ng-click="$ctrl.cancelOrder(item._id,$index)">
           Cancel
