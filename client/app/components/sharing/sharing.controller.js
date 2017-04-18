@@ -16,6 +16,7 @@ class SharingController {
     this.$scope.test = 100;
 
 
+
     this.latitude = [36.806575,36.805207,36.793342,36.793342,36.789457];
     this.longitude = [10.184594,10.168172,10.162553,10.162553,10.160197];
     this.Sharing.getAvailable().then((response) => {
