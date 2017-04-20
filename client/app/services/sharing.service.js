@@ -25,7 +25,7 @@ export default class Sharing {
   addCustomer(id_schedule) {
     return this.$http({
       method: 'PUT',
-      url: 'http://localhost:4000/sharing/addCustomer/' + id_schedule + '/58c00d046ad53f1e3c325fe7',
+      url: 'http://localhost:4000/sharing/addCustomer/' + id_schedule + '/'+localStorage.getItem('CurrentUser'),
 
     });
   }
@@ -33,8 +33,14 @@ export default class Sharing {
   deleteCustomerFromSchedule(id_schedule) {
     return this.$http({
       method: 'DELETE',
-      url: 'http://localhost:4000/sharing/delete/' + id_schedule + '/58c00b4f44822044ec960706',
+      url: 'http://localhost:4000/sharing/delete/' + id_schedule + '/'+localStorage.getItem('CurrentUser'),
 
+    });
+  }
+  numberNotification() {
+    return this.$http({
+      method: 'GET',
+      url: 'http://localhost:4000/sharing/notify/'+localStorage.getItem('CurrentUser'),
     });
   }
 }

@@ -15,8 +15,33 @@
     color: white;
     font-family: 'Comic Sans MS', cursive;
   }
+  .notify{
+    background-color: #69f0ae;
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 15px auto;
+
+  }
+  .spannotify{
+    color: #004d40;
+    font-family: 'Arial', Geneva, sans-serif;
+    font-size: 15px;
+  }
+  .success{
+    margin-top: 20px;
+    color: #004d40;
+    font-size: 30px;
+  }
+
 </style>
-<h1>{{test}}</h1>
+
+<span class="mdl-badge" data-badge="{{$ctrl.nb_notification}}"
+      style="float: right; color: white;margin-right: 60px;margin-top: 60px" ng-click="$ctrl.notify()">Notification</span>
+<br>
+<br>
+
+
 <h1>{{$ctrl.latitude_user}}</h1>
 <h1>{{$ctrl.longitude_user}}</h1>
 
@@ -28,10 +53,12 @@
     <li class="mdl-list__item mdl-list__item--three-line mdl-js-ripple-effect" style="height: auto"
         ng-repeat="item in $ctrl.availablelist " ng-cloak="">
 
-      <span class="mdl-list__item-primary-content" ng-init="$ctrl.distance($index,$ctrl.latitude_user,$ctrl.longitude_user)">
+      <span class="mdl-list__item-primary-content"
+            ng-init="$ctrl.distance($index,$ctrl.latitude_user,$ctrl.longitude_user)">
       <span class="custom">From :</span><span class="text">{{item.from}}</span><br>
       <span class="custom">To :</span><span class="text">{{item.to}}</span><br>
-      <span class="custom">Distance :</span><span class="text">{{$ctrl.distances[$index]}} Km</span><!--$ctrl.distances[$index]-->
+      <span class="custom">Distance :</span><span class="text">{{$ctrl.distances[$index]}} Km</span>
+        <!--$ctrl.distances[$index]-->
       </span>
 
       <span class="mdl-list__item-secondary-content">
@@ -52,8 +79,12 @@
   </div>
 </ul>
 <div>
-
   <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="home">
     Return
   </button>
+</div>
+<div class="notify" ng-if="$ctrl.notif==true">
+  <span class="success">&#10004;</span>
+  <span class="spannotify"><strong style=" font-size: 20px;">{{$ctrl.nb_notification}} customer(s)</strong> is/are added on your commmute</span>
+  <span class="mdl-badge" data-badge="X" ng-click="$ctrl.falseNotify()" style="float: right"></span>
 </div>

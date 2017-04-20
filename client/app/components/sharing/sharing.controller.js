@@ -1,5 +1,6 @@
 class SharingController {
   constructor(Users,Sharing, $scope, $rootScope, $interval) {
+    this.notif=false;
     this.Users = Users;
     this.$interval = $interval;
     this.$scope = $scope;
@@ -14,7 +15,7 @@ class SharingController {
     this.distances = [];
     this.unique = false;
     this.$scope.test = 100;
-
+    this.nb_notification = 0;
 
 
     this.latitude = [36.806575,36.805207,36.793342,36.793342,36.789457];
@@ -25,7 +26,14 @@ class SharingController {
     }, (reject) => {
       console.log('Something went wrong');
     });
-
+/////////////////////////////////
+    this.Sharing.numberNotification().then((response) => {
+      this.nb_notification = response.data;
+      console.log("LIST :", this.nb_notification);
+    }, (reject) => {
+      console.log('Something went wrong');
+    });
+    /////////////////
 
 
 
@@ -34,11 +42,10 @@ class SharingController {
     this.$onInit= ()=>{
       this.$interval(()=>{this.Users.getCurrentPosition().then((resolve,reject)=>{
         if(resolve){
-          console.log("resolve coords",resolve.coords);
+
           this.latitude_user=resolve.coords.latitude;
           this.longitude_user=resolve.coords.longitude;
-          console.log("latitude_user coords",this.latitude_user);
-          console.log("longitude_user coords",this.longitude_user);
+
         }
 
         else{
@@ -76,6 +83,16 @@ class SharingController {
       console.log('Something went wrong');
     });
   }
+  notify()
+  {
+    this.notif=true;
+
+  }
+falseNotify()
+{
+  this.notif=false;
+  this.nb_notification=0;
+}
 
 }
 export default SharingController;
