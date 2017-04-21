@@ -43,6 +43,12 @@ export default class Sharing {
       url: 'http://localhost:4000/sharing/notify/'+localStorage.getItem('CurrentUser'),
     });
   }
+  numberplace() {
+    return this.$http({
+      method: 'GET',
+      url: 'http://localhost:4000/sharing/place',
+    });
+  }
 }
 
 
