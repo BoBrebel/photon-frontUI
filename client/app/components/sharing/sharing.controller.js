@@ -82,6 +82,7 @@ class SharingController {
     this.unique = false;
     this.cancel[index] = false;
     this.Sharing.deleteCustomerFromSchedule(id_schedule);
+    this.nb_place[index]=this.nb_place[index]+1;
   }
 
 

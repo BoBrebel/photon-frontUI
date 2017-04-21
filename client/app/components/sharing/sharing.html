@@ -15,7 +15,8 @@
     color: white;
     font-family: 'Arial', cursive;
   }
-  .notify{
+
+  .notify {
     background-color: #69f0ae;
     width: 400px;
     height: 60px;
@@ -24,12 +25,14 @@
     opacity: 0.9;
 
   }
-  .spannotify{
+
+  .spannotify {
     color: #004d40;
     font-family: 'Arial', Geneva, sans-serif;
     font-size: 15px;
   }
-  .success{
+
+  .success {
     margin-top: 20px;
     color: #004d40;
     font-size: 33px;
@@ -38,7 +41,8 @@
 </style>
 
 <span class="mdl-badge" data-badge="{{$ctrl.nb_notification}}"
-      style="float: right; color: white;margin-right: 60px;margin-top: 60px" ng-click="$ctrl.notify()">Notification</span>
+      style="float: right; color: white;margin-right: 60px;margin-top: 60px"
+      ng-click="$ctrl.notify()">Notification</span>
 <br>
 <br>
 
@@ -53,7 +57,6 @@
   <div class="opacity">
     <li class="mdl-list__item mdl-list__item--three-line mdl-js-ripple-effect" style="height: auto"
         ng-repeat="item in $ctrl.availablelist " ng-cloak="">
-
       <span class="mdl-list__item-primary-content"
             ng-init="$ctrl.distance($index,$ctrl.latitude_user,$ctrl.longitude_user)">
       <span class="custom">From :</span><span class="text">{{item.from}}</span><br>
@@ -71,16 +74,17 @@
           Order
       </button>
       </div>
-      <div ng-if="$ctrl.cancel[$index]==true && $ctrl.unique==true && $ctrl.nb_place[$index]>0" ng-cloak="">
+      <div ng-if="$ctrl.cancel[$index]==true && $ctrl.unique==true" ng-cloak="">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
                 ng-click="$ctrl.cancelOrder(item._id,$index)">
           Cancel
       </button>
       </div>
-    </span>
-    </li>
+      </span>
   </div>
 </ul>
+
+
 <div>
   <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="home">
     Return
