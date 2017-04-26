@@ -7,6 +7,8 @@ import AppComponent from './app.component';
 import 'normalize.css';
 import '../../node_modules/material-design-lite/material.min.js';
 import './directives/angular-leaflet-directive.min';
+import './directives/calendar';
+import './directives/angular-chat';
 
 angular.module('app', [
     uiRouter,
@@ -14,6 +16,8 @@ angular.module('app', [
     Components,
     Services,
     'leaflet-directive',
+    'ui.calendar',
+    'chat'
   ])
   .config(($locationProvider) => {
     "ngInject";
