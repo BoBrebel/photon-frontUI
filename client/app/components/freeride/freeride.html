@@ -1,0 +1,132 @@
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+<script language="JavaScript">
+  jQuery(document).ready(function(){
+    jQuery('#copyButton').click(function(event) {
+      jQuery('#free').toggle('show');
+    });
+  });
+  document.getElementById("copyButton").addEventListener("click", function() {
+    copyToClipboard(document.getElementById("copyTarget"));
+  });
+
+  function copyToClipboard(elem) {
+    // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+      // can just use the original source element for the selection and copy
+      target = elem;
+      origSelectionStart = elem.selectionStart;
+      origSelectionEnd = elem.selectionEnd;
+    } else {
+      // must use a temporary form element for the selection and copy
+      target = document.getElementById(targetId);
+      if (!target) {
+        var target = document.createElement("textarea");
+        target.style.position = "absolute";
+        target.style.left = "-9999px";
+        target.style.top = "0";
+        target.id = targetId;
+        document.body.appendChild(target);
+      }
+      target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+
+    // copy the selection
+    var succeed;
+    try {
+      succeed = document.execCommand("copy");
+    } catch(e) {
+      succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+      currentFocus.focus();
+    }
+
+    if (isInput) {
+      // restore prior selection
+      elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+      // clear temporary content
+      target.textContent = "";
+    }
+    return succeed;
+  }
+</script>
+<style>
+  .demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: black;
+    background: url('app/assets/free.png') center / cover;
+    width: 412px;
+    height: 200px;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+</style>
+<br>
+<div class="demo-card-wide  mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title"><br><br>
+
+  </div>
+  <div class="mdl-card__supporting-text">
+    <h2 style="margin-bottom: -15px;" class="mdl-card__title-text"><strong>Want more rides with Less?</strong></h2>
+    <h5 style="margin-bottom: 0px; margin-right: 90px;" >Get a free ride to the destination of your choice
+      when you refer a friend to try Photon. </h5>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <input style="
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;" class="mdl-textfield__input" value="{{$ctrl.logged}}" type="text" id="copyTarget"><br>
+    <button id="copyButton" style="
+    margin-left: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 40px;
+    margin-bottom: 20px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+      Copy Link
+    </button>
+    <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+      (function() {
+        'use strict';
+        window['counter'] = 0;
+        var snackbarContainer = document.querySelector('#demo-toast-example');
+        var showToastButton = document.querySelector('#copyButton');
+        showToastButton.addEventListener('click', function() {
+          'use strict';
+          var data = {message: 'Link Copied'};
+          snackbarContainer.MaterialSnackbar.showSnackbar(data);
+        });
+      }());
+    </script>
+    <button id="free" style="
+    display: none;
+    margin-left: 70px;
+    padding-left: 55px;
+    padding-right: 60px;
+    height: 40px;
+    margin-bottom: 20px;" ng-click="$ctrl.checkForRide()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      Get Free Ride
+    </button>
+  </div>
+
+</div>

@@ -1,16 +1,16 @@
-import ChatModule from './chat'
-import ChatController from './chat.controller';
-import ChatComponent from './chat.component';
-import ChatTemplate from './chat.html';
+import FreerideModule from './freeride'
+import FreerideController from './freeride.controller';
+import FreerideComponent from './freeride.component';
+import FreerideTemplate from './freeride.html';
 
-describe('Chat', () => {
+describe('Freeride', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(ChatModule));
+  beforeEach(window.module(FreerideModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new ChatController();
+      return new FreerideController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('Chat', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(ChatTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(FreerideTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
       // component/directive specs
-      let component = ChatComponent;
+      let component = FreerideComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(ChatTemplate);
+        expect(component.template).to.equal(FreerideTemplate);
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(ChatController);
+        expect(component.controller).to.equal(FreerideController);
       });
   });
 });

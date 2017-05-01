@@ -8,7 +8,8 @@ import 'normalize.css';
 import '../../node_modules/material-design-lite/material.min.js';
 import './directives/angular-leaflet-directive.min';
 import './directives/calendar';
-import './directives/angular-chat';
+
+
 
 angular.module('app', [
     uiRouter,
@@ -26,5 +27,4 @@ angular.module('app', [
     $locationProvider.html5Mode(true).hashPrefix('!');
   })
   .component('app', AppComponent);
-
 

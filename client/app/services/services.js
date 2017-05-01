@@ -5,6 +5,8 @@ import Schedule from './schedule.service';
 import Authentification from './auth.service';
 import Sharing from './sharing.service';
 import Feedback from './feedback.service';
+import Freeride from './freeride.service';
+
 
 let serviceModule = angular.module('app.services', [])
   .service('Cars',Car)
@@ -13,6 +15,7 @@ let serviceModule = angular.module('app.services', [])
   .service('Authentification', Authentification)
   .service('Sharing', Sharing)
   .service('Feedback', Feedback)
+  .service('Freeride',Freeride)
 
   .name;
 

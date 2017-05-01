@@ -7,7 +7,9 @@ import Authentification from './authentification/authentification';
 import Sharing from './sharing/sharing';
 import Feedback from './feedback/feedback';
 import Adds from './adds/adds';
-import Chatt from './chat/chat';
+import Freerides from './freeride/freeride';
+
+
 
 let componentModule = angular.module('app.components', [
   Home,
@@ -18,7 +20,7 @@ let componentModule = angular.module('app.components', [
   Sharing,
   Feedback,
   Adds,
-  Chatt
+  Freerides
 ])
 
 .name;
