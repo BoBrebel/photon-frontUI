@@ -4,6 +4,7 @@
   .custom {
     color: #84ffff;
     font-family: 'MS Sans Serif', Geneva, sans-serif;
+
   }
 
   .opacity {
@@ -14,6 +15,7 @@
   .text {
     color: white;
     font-family: 'Arial', cursive;
+
   }
 
   .notify {
@@ -45,44 +47,54 @@
       ng-click="$ctrl.notify()">Notification</span>
 <br>
 <br>
+<h1>Sharing Commute</h1>
+<br>
 
 
-<h1>{{$ctrl.latitude_user}}</h1>
-<h1>{{$ctrl.longitude_user}}</h1>
+
 
 <div ng-init=""></div>
 <!-- Wide card with share menu button -->
 
-<ul class="demo-list-three mdl-list">
-  <div class="opacity">
-    <li class="mdl-list__item mdl-list__item--three-line mdl-js-ripple-effect" style="height: auto"
-        ng-repeat="item in $ctrl.availablelist " ng-cloak="">
-      <span class="mdl-list__item-primary-content"
+<div class="opacity">
+
+  <ul>
+    <!--ng repeat-->
+    <div ng-repeat="item in $ctrl.availablelist " ng-cloak="">
+      <li class="mdl-list__item mdl-list__item--three-line mdl-js-ripple-effect" style="height: auto" ng-if="item.user_id[0] != $ctrl.currentUser ">
+
+      <span class="mdl-list__item-primary-content" style=""
             ng-init="$ctrl.distance($index,$ctrl.latitude_user,$ctrl.longitude_user)">
       <span class="custom">From :</span><span class="text">{{item.from}}</span><br>
-      <span class="custom">To :</span><span class="text">{{item.to}}</span><br>
-      <span class="custom">Distance :</span><span class="text">{{$ctrl.distances[$index]}} Km</span>
-      <span class="custom">Nb.Place : </span><span class="text">{{$ctrl.nb_place[$index]}}</span>
-
+      <span class="custom">To :</span><span class="text">{{item.to}}</span>
+      <span class="custom">Distance :</span><span class="text">{{$ctrl.distances[$index]}} Km</span><br>
+      <span class="custom">Number of places : </span><span class="text">{{$ctrl.nb_place[$index]}}</span>
         <!--$ctrl.distances[$index]-->
       </span>
-
-      <span class="mdl-list__item-secondary-content">
-      <div ng-if="!$ctrl.cancel[$index] && $ctrl.unique==false" ng-cloak="">
+        <span class="mdl-list__item-secondary-content">
+      <div ng-if="!$ctrl.cancel[$index] && $ctrl.unique==false && $ctrl.nb_place[$index]!=0" ng-cloak="">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
                 ng-click="$ctrl.add_Customer(item._id,$index)">
           Order
-      </button>
-      </div>
+        </button></div>
+
       <div ng-if="$ctrl.cancel[$index]==true && $ctrl.unique==true" ng-cloak="">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
                 ng-click="$ctrl.cancelOrder(item._id,$index)">
           Cancel
       </button>
       </div>
+                <div ng-if="$ctrl.nb_place[$index]==0" ng-cloak="">
+        <button  class="mdl-button mdl-js-button mdl-button--raised" disabled style="color: white"
+                >
+          Full
+        </button></div>
       </span>
-  </div>
-</ul>
+
+      </li>
+    </div>
+  </ul>
+</div>
 
 
 <div>

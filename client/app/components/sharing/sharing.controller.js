@@ -1,5 +1,6 @@
 class SharingController {
   constructor(Users, Sharing, $scope, $rootScope, $interval) {
+    this.currentUser= localStorage.getItem('CurrentUser');
     this.notif = false;
     this.Users = Users;
     this.$interval = $interval;
@@ -16,7 +17,7 @@ class SharingController {
     this.unique = false;
     this.$scope.test = 100;
     this.nb_notification = 0;
-    this.nb_place = 0;
+    this.nb_place = [];
 
     this.latitude = [36.806575, 36.805207, 36.793342, 36.793342, 36.789457];
     this.longitude = [10.184594, 10.168172, 10.162553, 10.162553, 10.160197];
