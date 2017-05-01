@@ -4,8 +4,6 @@ class FreerideController {
     this.Freeride = Freeride;
     this.freeRide = {};
     this.logged = "http://localhost:4000/users/invite/"+localStorage.getItem('CurrentUser');
-
-
   }
 
   checkForRide(){

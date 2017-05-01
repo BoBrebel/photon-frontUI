@@ -17,8 +17,7 @@ angular.module('app', [
     Components,
     Services,
     'leaflet-directive',
-    'ui.calendar',
-    'chat'
+    'ui.calendar'
   ])
   .config(($locationProvider) => {
     "ngInject";
