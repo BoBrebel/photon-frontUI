@@ -46,7 +46,7 @@ export default class Sharing {
   numberplace() {
     return this.$http({
       method: 'GET',
-      url: 'http://localhost:4000/sharing/place',
+      url: 'http://localhost:4000/sharing/place/'+localStorage.getItem('CurrentUser'),
     });
   }
 }
