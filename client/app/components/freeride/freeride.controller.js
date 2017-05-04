@@ -1,11 +1,14 @@
 class FreerideController {
-  constructor(Freeride,$state) {
+  constructor(Freeride,$state,Authentification,$stateParams) {
     this.name = 'freeride';
     this.$state = $state;
+    this.$stateParams = $stateParams;
     this.Freeride = Freeride;
+    this.Authentification = Authentification;
     this.numberOfFreeRides={};
     this.freeRide = {};
-    this.logged = "http://localhost:4000/users/invite/"+localStorage.getItem('CurrentUser');
+    this.newUser={};
+    this.logged = "http://localhost:3000/users/invite/"+localStorage.getItem('CurrentUser');
   }
 
   checkForRide(){
@@ -29,6 +32,25 @@ class FreerideController {
     console.log('Something went wrong');
   });
   }
+
+  formSubmit(user) {
+    this.newUser = {
+      name: user.name,
+      username: user.username,
+      email: user.email,
+      password: user.password,
+      adress: user.adress,
+      type: user.type,
+      invited : this.$state.params.id
+    };
+
+    console.log("current new user state: ", this.newUser);
+    this.Freeride.registerinvites(this.newUser).then((response)=>{
+      console.log(' User Added :',response.data);
+      this.$state.go('login',{});
+    },(reject)=>{
+    });
+  };
 
 }
 

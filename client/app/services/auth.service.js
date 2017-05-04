@@ -16,6 +16,7 @@ export default class Authentification {
     });
   }
 
+
   login(logged){
     return this.$http({
       method: 'POST',

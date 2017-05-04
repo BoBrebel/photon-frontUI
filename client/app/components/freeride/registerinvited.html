@@ -1,0 +1,124 @@
+<style>
+
+  body{
+    background: #fff;
+  }
+  .main_content h3{
+    text-align: center;
+  }
+  .login-form-div{
+    width: 380px;
+    background: #fff;
+    height:600px;
+    border-radius: 4px;
+  }
+  .form-column{
+    padding: 20px 35px !important;
+  }
+  .cell_con{
+    background: #fff;
+    padding-left: 20px;
+  }
+  .cell_con div{
+    width: 77%;
+  }
+  .links{
+    margin: auto;
+    text-align: center;
+  }
+  .btn{
+    margin:auto;
+    width:100%;
+  }
+</style>
+<br>
+
+<div id="op">
+
+  <div style="margin-top: 30px;" class="mdl-layout mdl-layout--fixed-header mdl-js-layout  mdl-color--white-100">
+    <main class="mdl-layout__content main_content">
+      <form>
+        <div class="login-form-div mdl-grid mdl-shadow--2dp"><br><br><br>
+          <img style="margin-left: 43px;" src="/app/assets/logo.png" alt="">
+          <div style="  margin-top: 40px;" class="mdl-cell mdl-cell--12-col cell_con">
+            <i class="material-icons">person</i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input ng-model="user.name" class="mdl-textfield__input" type="text"  id="name">
+              <label class="mdl-textfield__label" for="name">Enter Full Name</label>
+            </div>
+          </div>
+          <div  class="mdl-cell mdl-cell--12-col cell_con">
+            <i class="material-icons">face</i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input ng-model="user.username" class="mdl-textfield__input" type="text"  id="username">
+              <label class="mdl-textfield__label" for="username">Enter UserName</label>
+              <span class="mdl-textfield__error">Invalid Email...!</span>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col cell_con">
+            <i class="material-icons">mail_outline</i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input ng-model="user.email" class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email">
+              <label class="mdl-textfield__label" for="email">Enter Email</label>
+              <span class="mdl-textfield__error">Invalid Email...!</span>
+            </div>
+          </div>
+          <div  class="mdl-cell mdl-cell--12-col cell_con">
+            <i class="material-icons">lock</i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input ng-model="user.password" class="mdl-textfield__input" type="password" id="password">
+              <label class="mdl-textfield__label" for="password">Enter Password</label>
+            </div>
+          </div>
+
+          <div  class="mdl-cell mdl-cell--12-col cell_con">
+            <i class="material-icons">room</i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input ng-model="user.adress" class="mdl-textfield__input" type="text" id="adress">
+              <label class="mdl-textfield__label" for="adress">Enter Address</label>
+            </div>
+          </div>
+          <div  class="mdl-cell mdl-cell--12-col cell_con">
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <table>
+
+              <tr>
+                <td><span style="margin-right: 20px"> Plan</span> </td>
+
+
+                <td>
+                  <label class="mdl-radio mdl-js-radio" for="standard">
+                    <input ng-model="user.type" value="standard" type="radio" id="standard" name="type" class="mdl-radio__button" checked>
+                    <span class="mdl-radio__label" style="margin-right: 10px;"> Standard</span>
+                  </label>
+                </td>
+                <td>
+                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="business">
+                    <input ng-model="user.type" value=""business type="radio" id="business" name="type" class="mdl-radio__button" >
+                    <span class="mdl-radio__label"> Business</span>
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div  class="mdl-cell mdl-cell--2-col-phone login-btn-con">
+            <button ng-click="$ctrl.formSubmit(user)" type="submit" style="margin-left: 90px;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Register</button>
+          </div>
+      </form><br><br><br><br>
+      <div  class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet links">
+        <a style="font-size: 20px;" ui-sref="login" class="mdl-button--primary">Already a member? Login !</a>
+      </div>
+
+  </div>
+  </main>
+</div>
+</div>
+
+

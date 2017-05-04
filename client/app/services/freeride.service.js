@@ -20,7 +20,13 @@ export default class Freeride {
       url: 'http://localhost:4000/users/substract/'+localStorage.getItem('CurrentUser')
     });
   }
-
+  registerinvites(user){
+    return this.$http({
+      method: 'POST',
+      url: 'http://localhost:4000/users/invite/'+localStorage.getItem('CurrentUser'),
+      data:user
+    });
+  }
 
 
 
