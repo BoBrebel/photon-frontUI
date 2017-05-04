@@ -11,7 +11,13 @@ export default class Freeride {
   checkFreeRide() {
     return this.$http({
       method: 'GET',
-      url: 'http://localhost:4000/users/checkinvite/'+localStorage.getItem('CurrentUser')
+      url: 'http://localhost:4000/users/numberinvite/'+localStorage.getItem('CurrentUser')
+    });
+  }
+  substractRide(){
+    return this.$http({
+      method: 'GET',
+      url: 'http://localhost:4000/users/substract/'+localStorage.getItem('CurrentUser')
     });
   }
 

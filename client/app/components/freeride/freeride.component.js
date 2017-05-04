@@ -6,7 +6,7 @@ let freerideComponent = {
   restrict: 'E',
   bindings: {},
   template,
-  controller : ['Freeride',controller]
+  controller : ['Freeride','$state',controller]
 };
 
 export default freerideComponent;

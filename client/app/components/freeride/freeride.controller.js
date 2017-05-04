@@ -1,19 +1,18 @@
 class FreerideController {
-  constructor(Freeride) {
+  constructor(Freeride,$state) {
     this.name = 'freeride';
+    this.$state = $state;
     this.Freeride = Freeride;
+    this.numberOfFreeRides={};
     this.freeRide = {};
     this.logged = "http://localhost:4000/users/invite/"+localStorage.getItem('CurrentUser');
   }
 
   checkForRide(){
-    var test = {
-      "msg": "No Free Rides"
-    };
+
     this.Freeride.checkFreeRide().then((response) => {
-      this.freeRide = response.data;
-      console.log("Free ride", this.freeRide);
-      console.log("test", test);
+      console.log("number of Free ride", response.data);
+      this.numberOfFreeRides= response.data;
       /* need to check if the freeRide obj has a user, or has no free rides msg*/
       /*if it has a user, we must either add money to his account or offer him a free ride ? */
       /* if it has no free ride msg, display : You don't have free rides yet*/
@@ -21,6 +20,14 @@ class FreerideController {
     }, (reject) => {
       console.log('Something went wrong');
     });
+  }
+  substractRides(){
+  this.Freeride.substractRide().then((response)=> {
+    console.log("Subtracted a free ride",response.data);
+    this.$state.go('home',{});
+  },(reject)=> {
+    console.log('Something went wrong');
+  });
   }
 
 }
