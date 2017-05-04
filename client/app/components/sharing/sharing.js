@@ -7,8 +7,6 @@ let sharingModule = angular.module('sharing', [
 ])
   .config(($stateProvider) => {
     "ngInject";
-
-
     $stateProvider
       .state('sharing', {
         url: '/sharing',

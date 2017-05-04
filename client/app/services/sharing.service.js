@@ -1,6 +1,4 @@
-/**
- * Created by HDMI on 3/30/2017.
- */
+
 export default class Sharing {
   constructor($http) {
     'ngInject';
