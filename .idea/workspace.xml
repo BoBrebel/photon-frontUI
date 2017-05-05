@@ -477,7 +477,7 @@
       <workItem from="1493419381479" duration="1212000" />
       <workItem from="1493473010060" duration="5056000" />
       <workItem from="1493573096947" duration="14773000" />
-      <workItem from="1493939060007" duration="1423000" />
+      <workItem from="1493939060007" duration="1447000" />
     </task>
     <task id="LOCAL-00001" summary="add profile">
       <created>1493939138172</created>
@@ -486,11 +486,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493939138172</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix design">
+      <created>1493941821189</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1493941821189</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78580000" />
+    <option name="totallyTimeSpent" value="78604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -525,7 +532,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add profile" />
+    <MESSAGE value="fix design" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix design" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

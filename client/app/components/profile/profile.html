@@ -1,0 +1,124 @@
+<style>
+  .user-row {
+    margin-bottom: 14px;
+  }
+
+  .user-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+  }
+
+  .dropdown-user:hover {
+    cursor: pointer;
+  }
+
+  .table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+  }
+
+  .table-user-information > tbody > tr:first-child {
+    border-top: 0;
+  }
+
+  .table-user-information > tbody > tr > td {
+    border-top: 0;
+  }
+
+  .toppad {
+    margin-top: 20px;
+  }
+
+  .img-circle {
+    border: ridge grey;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+  }
+
+
+</style>
+<br>
+<br>
+
+<div>
+
+</div>
+<div class="container" style="background-color: white;padding: 70px">
+  <div class="row">
+    <div
+      class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad"
+    >
+      <div class="panel panel-info">
+        <div class="panel-body">
+          <br>
+          <br>
+          <div class="row" ng-if="$ctrl.switch==false">
+            <div class="col-md-3 col-lg-3 " align="center"><img alt="User Pic"
+                                                                src="https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/boy-512.png"
+                                                                class="img-circle">
+            </div>
+            <ul class="demo-list-icon mdl-list">
+              <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+    <i class="material-icons mdl-list__item-icon">person</i>
+      <strong>Name :</strong>
+</span> <span class="mdl-list__item-primary-content">
+   {{$ctrl.currUser.name}}
+</span>
+              </li>
+
+              <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+    <i class="material-icons mdl-list__item-icon">mail</i>
+     <strong>Email :</strong>
+</span> <span class="mdl-list__item-primary-content">
+    {{$ctrl.currUser.email}}
+</span>
+              </li>
+
+              <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+    <i class="material-icons mdl-list__item-icon">home</i>
+       <strong>Adress :</strong>
+</span> <span class="mdl-list__item-primary-content">
+     {{$ctrl.currUser.adress}}
+</span>
+              </li>
+            </ul>
+            <button class="mdl-button mdl-js-button mdl-button--primary" style="float: right"
+                    ng-click="$ctrl.changeView()">
+              Edit
+            </button>
+          </div>
+          <div ng-if="$ctrl.switch==true">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" ng-value="$ctrl.currUser.name" ng-model="$ctrl.currUser.name">
+              <label class="mdl-textfield__label">Name...</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" ng-value="$ctrl.currUser.email"  ng-model="$ctrl.currUser.email">
+              <label class="mdl-textfield__label">Mail...</label>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" ng-value="$ctrl.currUser.adress"  ng-model="$ctrl.currUser.adress">
+              <label class="mdl-textfield__label">Adress...</label>
+            </div>
+            <br>
+            <button class="mdl-button mdl-js-button mdl-button--primary" style="float: right"
+                    ng-click="$ctrl.updateCustomer();$ctrl.changeView()">
+              Confirm
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
