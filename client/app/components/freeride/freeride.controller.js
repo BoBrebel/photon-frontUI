@@ -10,20 +10,17 @@ class FreerideController {
     this.newUser={};
     this.logged = "http://localhost:3000/users/invite/"+localStorage.getItem('CurrentUser');
   }
-
+/* Returns number of free ride available for the connected uer*/
   checkForRide(){
-
     this.Freeride.checkFreeRide().then((response) => {
       console.log("number of Free ride", response.data);
       this.numberOfFreeRides= response.data;
-      /* need to check if the freeRide obj has a user, or has no free rides msg*/
-      /*if it has a user, we must either add money to his account or offer him a free ride ? */
-      /* if it has no free ride msg, display : You don't have free rides yet*/
-
     }, (reject) => {
       console.log('Something went wrong');
     });
   }
+
+  /*Subtracts a ride after the user orders a free ride */
   substractRides(){
   this.Freeride.substractRide().then((response)=> {
     console.log("Subtracted a free ride",response.data);
@@ -32,7 +29,7 @@ class FreerideController {
     console.log('Something went wrong');
   });
   }
-
+/*Registers the new invited user with the refer link*/
   formSubmit(user) {
     this.newUser = {
       name: user.name,
@@ -43,15 +40,12 @@ class FreerideController {
       type: user.type,
       invited : this.$state.params.id
     };
-
-    console.log("current new user state: ", this.newUser);
     this.Freeride.registerinvites(this.newUser).then((response)=>{
       console.log(' User Added :',response.data);
       this.$state.go('login',{});
     },(reject)=>{
     });
   };
-
 }
 
 export default FreerideController;
