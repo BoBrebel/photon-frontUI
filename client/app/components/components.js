@@ -9,7 +9,7 @@ import Profile from './profile/profile';
 import Feedback from './feedback/feedback';
 import Adds from './adds/adds';
 import Freerides from './freeride/freeride';
-
+import Plans from './plans/plans'
 
 
 let componentModule = angular.module('app.components', [
@@ -22,7 +22,8 @@ let componentModule = angular.module('app.components', [
   Profile,
   Feedback,
   Adds,
-  Freerides
+  Freerides,
+  Plans
 ])
 
 .name;
