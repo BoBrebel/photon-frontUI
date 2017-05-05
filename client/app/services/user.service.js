@@ -2,8 +2,9 @@
  * Created by BoB on 3/9/2017.
  */
 export default class User {
-  constructor() {
+  constructor($http) {
     'ngInject';
+    this.$http = $http;
   }
 
   getCurrentPosition(){
@@ -18,7 +19,6 @@ export default class User {
       },options)
     })
   }
-
 }/**
  * Created by BoB on 3/9/2017.
  */
