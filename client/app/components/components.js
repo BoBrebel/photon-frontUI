@@ -8,7 +8,7 @@ import Sharing from './sharing/sharing';
 import Feedback from './feedback/feedback';
 import Adds from './adds/adds';
 import Freerides from './freeride/freeride';
-
+import Plans from './plans/plans'
 
 
 let componentModule = angular.module('app.components', [
@@ -20,7 +20,8 @@ let componentModule = angular.module('app.components', [
   Sharing,
   Feedback,
   Adds,
-  Freerides
+  Freerides,
+  Plans
 ])
 
 .name;

@@ -1,0 +1,50 @@
+.plans {
+  color: red;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 340px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+.demo-card-square > .mdl-card__supporting-text {
+  margin: 0 auto !important;
+  height: 0px
+}
+
+// .demo-card-square > .mdl-card__supporting-text li{
+//   font-size: 20px;
+//   list-style: none;
+//   margin-bottom: 10px;
+//
+// }
