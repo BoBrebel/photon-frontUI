@@ -105,5 +105,6 @@ class SharingController {
     this.nb_notification = 0;
   }
 
+
 }
 export default SharingController;

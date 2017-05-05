@@ -5,6 +5,7 @@ import Mapbox from './mapbox/mapbox';
 import Schedule from './schedule/schedule';
 import Authentification from './authentification/authentification';
 import Sharing from './sharing/sharing';
+import Profile from './profile/profile';
 import Feedback from './feedback/feedback';
 import Adds from './adds/adds';
 import Freerides from './freeride/freeride';
@@ -18,6 +19,7 @@ let componentModule = angular.module('app.components', [
   Authentification,
   Mapbox,
   Sharing,
+  Profile,
   Feedback,
   Adds,
   Freerides,
