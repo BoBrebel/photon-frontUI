@@ -5,12 +5,10 @@ import Mapbox from './mapbox/mapbox';
 import Schedule from './schedule/schedule';
 import Authentification from './authentification/authentification';
 import Sharing from './sharing/sharing';
-
 import Feedback from './feedback/feedback';
 import Adds from './adds/adds';
 import Freerides from './freeride/freeride';
 import Plans from './plans/plans'
-
 
 let componentModule = angular.module('app.components', [
   Home,
